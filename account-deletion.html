@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account — FridgeChef</title>
+<style>
+  :root {
+    --ink: #1a1a1a; --muted: #5c5c5c; --rule: #e3e3e3;
+    --bg: #ffffff; --accent: #1f6f43; --box: #f6f8f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e8e8; --muted:#a5a5a5; --rule:#333; --bg:#141414; --accent:#6cc38d; --box:#1e211f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 36px 0 10px; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--rule); }
+  ol, ul { padding-left: 22px; } li { margin: 7px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .93rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  .box { background: var(--box); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; margin: 22px 0; }
+  .box p:first-child { margin-top: 0; } .box p:last-child { margin-bottom: 0; }
+  .steps { counter-reset: s; list-style: none; padding: 0; }
+  .steps li { counter-increment: s; position: relative; padding-left: 40px; margin: 14px 0; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 0;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: .85rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
+  @media (prefers-color-scheme: dark) {
+ }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Delete your FridgeChef account</h1>
+<p class="meta">FridgeChef: AI Recipe Planner &middot; Greg Rycroft</p>
+
+<p>You can delete your FridgeChef account and everything synced to it at any time. There are two ways to do it.</p>
+
+<h2>Option 1 — From inside the app (fastest)</h2>
+<ol class="steps">
+  <li>Open FridgeChef and go to <strong>Account</strong>.</li>
+  <li>Scroll to <strong>Delete account</strong>.</li>
+  <li>Confirm when prompted. If you signed in a while ago you may be asked to sign in again first — this is a security check to confirm it is really you.</li>
+</ol>
+<p>Deletion is immediate and cannot be undone.</p>
+
+<h2>Option 2 — By email</h2>
+<p>If you no longer have the app installed, email gregmish69@gmail.com from the address registered to your account, with the subject <strong>"Delete my account"</strong>.</p>
+<p>We will confirm your identity, delete the account, and reply to confirm within <strong>30 days</strong> — usually much sooner.</p>
+
+<h2>What gets deleted</h2>
+<table>
+  <tr><th>Data</th><th>What happens</th></tr>
+  <tr><td>Your account and sign-in credentials</td><td>Deleted immediately</td></tr>
+  <tr><td>Saved recipes</td><td>Deleted immediately</td></tr>
+  <tr><td>Meal plans</td><td>Deleted immediately</td></tr>
+  <tr><td>Recipe ratings and reviews</td><td>Deleted immediately</td></tr>
+  <tr><td>Recipe view history</td><td>Deleted immediately</td></tr>
+  <tr><td>Your profile (display name, email)</td><td>Deleted immediately</td></tr>
+</table>
+
+<h2>What is kept, and for how long</h2>
+<table>
+  <tr><th>Data</th><th>Retention</th></tr>
+  <tr><td>Anonymous crash and diagnostic reports</td><td>Up to 90 days, and not linked to your identity after deletion</td></tr>
+  <tr><td>Aggregated, anonymous usage analytics</td><td>Up to 14 months; cannot be traced back to you</td></tr>
+  <tr><td>Purchase records for the ad-free upgrade</td><td>Held by Google Play, not by us, and retained as long as tax and consumer law require</td></tr>
+</table>
+
+<div class="box">
+<p><strong>Data on your phone.</strong> Deleting your account removes what is stored on our servers. Recipes, pantry items and settings saved locally on your device are removed when you uninstall the app, or immediately via Settings &rarr; Reset app data.</p>
+</div>
+
+<div class="box">
+<p><strong>Your ad-free purchase.</strong> The one-time ad-free upgrade is tied to your Google Play account, not your FridgeChef account. If you delete your FridgeChef account and later make a new one, tap <em>Restore purchase</em> in Settings to get ad-free back. Deleting your account does not entitle you to a refund; refunds are handled by Google Play.</p>
+</div>
+
+<h2>Questions</h2>
+<p>Email gregmish69@gmail.com. See also our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+<footer>
+FridgeChef: AI Recipe Planner &middot; Account deletion &middot; 16 September 2026
+</footer>
+
+</div>
+</body>
+</html>

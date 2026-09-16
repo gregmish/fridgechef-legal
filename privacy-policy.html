@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — FridgeChef</title>
+<style>
+  :root {
+    --ink: #1a1a1a; --muted: #5c5c5c; --rule: #e3e3e3;
+    --bg: #ffffff; --accent: #1f6f43; --box: #f6f8f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e8e8; --muted:#a5a5a5; --rule:#333; --bg:#141414; --accent:#6cc38d; --box:#1e211f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 38px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--rule); }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .93rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  .box { background: var(--box); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; margin: 20px 0; }
+  .box p:first-child { margin-top: 0; } .box p:last-child { margin-bottom: 0; }
+  code { background: var(--box); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
+  @media (prefers-color-scheme: dark) {
+ }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="meta">FridgeChef: AI Recipe Planner &middot; Last updated: 16 September 2026</p>
+
+<p>This policy explains what FridgeChef collects, why, and what you can do about it. It covers the FridgeChef Android application published by Greg Rycroft ("we", "us").</p>
+
+<div class="box">
+<p><strong>The short version.</strong> FridgeChef is built local-first. Your ingredients, recipes and pantry live on your device. Recipes are generated on your phone where your device supports it. You only get an account if you choose to create one, and you can delete it and everything in it from inside the app.</p>
+</div>
+
+<h2>1. Information we collect</h2>
+
+<h3>Information you give us</h3>
+<ul>
+  <li><strong>Account details</strong> — if you create an account: your email address and a display name. If you sign in with Google or Apple, we receive your email address and name from that provider. We never see your password.</li>
+  <li><strong>Recipe and kitchen content</strong> — ingredients you enter, saved recipes, pantry items, meal plans, shopping lists, ratings and cooking notes.</li>
+  <li><strong>Preferences</strong> — dietary restrictions, allergens, nutrition goals, kitchen equipment, region and measurement units.</li>
+</ul>
+
+<h3>Information collected automatically</h3>
+<ul>
+  <li><strong>Diagnostics</strong> — crash reports and error diagnostics via Firebase Crashlytics, so we can fix faults.</li>
+  <li><strong>Usage analytics</strong> — via Firebase Analytics, only while the in-app analytics setting is enabled. You can turn this off at any time in Settings, and during onboarding.</li>
+  <li><strong>Advertising identifiers</strong> — Google AdMob uses your device's advertising ID to serve ads, unless you have purchased the ad-free upgrade.</li>
+</ul>
+
+<h3>Device permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Camera</td><td>To photograph your fridge for ingredient detection, and to scan product barcodes. When you use Fridge Scan, the photo is sent over an encrypted connection to our recipe service, which passes it to Google's Gemini API to identify the ingredients in it. The image is used only to produce that list of ingredients. We do not store it after the request completes, we do not associate it with your account, and we do not use it, or allow it to be used, to train any model. Barcode scanning happens entirely on your device and no image leaves it.</td></tr>
+  <tr><td>Microphone</td><td>Only for optional voice input when dictating ingredients or controlling hands-free cooking mode. Audio is used for that transcription and is not stored by us.</td></tr>
+  <tr><td>Notifications</td><td>To send expiry reminders and cooking prompts you have asked for.</td></tr>
+</table>
+<p>You can refuse or revoke any of these in your Android settings. The app works without them, with those specific features unavailable.</p>
+
+<h2>2. How recipes are generated</h2>
+<p>FridgeChef tries to generate recipes <strong>on your device</strong> first, using Android's on-device AI where your phone supports it. In that mode your ingredients are not sent anywhere.</p>
+<p>If on-device generation is unavailable and a cloud fallback is configured for your build, your ingredient list and recipe preferences are sent to our backend, which relays them to Google's Gemini API to produce a recipe. We do not send your name, email or account identifier with that request. If neither is available, the app produces a basic template recipe entirely offline.</p>
+
+<h2>3. Why we use your information</h2>
+<ul>
+  <li>To generate recipes and run the features you ask for.</li>
+  <li>To sync your saved content across your devices, if you are signed in.</li>
+  <li>To keep the app working — diagnosing crashes and errors.</li>
+  <li>To show ads, which fund the free version.</li>
+  <li>To understand which features are used, where you have allowed analytics.</li>
+</ul>
+<p>We do not sell your personal information. We do not use your recipes or photographs to train our own models.</p>
+
+<h2>4. Legal bases (UK / EU users)</h2>
+<table>
+  <tr><th>Purpose</th><th>Basis</th></tr>
+  <tr><td>Providing the app and your account</td><td>Performance of a contract</td></tr>
+  <tr><td>Crash diagnostics and security</td><td>Legitimate interests</td></tr>
+  <tr><td>Analytics and personalised advertising</td><td>Consent</td></tr>
+  <tr><td>Responding to legal obligations</td><td>Legal obligation</td></tr>
+</table>
+
+<h2>5. Who we share with</h2>
+<p>We use the following processors, each of which handles data under its own terms:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Firestore, Analytics, Crashlytics, Cloud Messaging, Remote Config) — accounts, synced content, diagnostics.</li>
+  <li><strong>Google AdMob</strong> — advertising.</li>
+  <li><strong>Google Play Billing</strong> — the ad-free purchase. We never receive your card details.</li>
+  <li><strong>Google Gemini API</strong> — only when cloud recipe fallback is used, as described above.</li>
+</ul>
+<p>We may also disclose information where we are legally required to.</p>
+
+<h2>6. International transfers</h2>
+<p>Our providers may process data outside the UK and EEA, including in the United States. Those transfers rely on the safeguards offered by the provider, such as Standard Contractual Clauses.</p>
+
+<h2>7. How long we keep it</h2>
+<ul>
+  <li><strong>On-device data</strong> — until you delete it or uninstall the app.</li>
+  <li><strong>Synced account data</strong> — until you delete your account.</li>
+  <li><strong>Crash and analytics data</strong> — for the retention periods Firebase applies, up to 14 months.</li>
+</ul>
+
+<h2>8. Your rights and choices</h2>
+<p>You can, at any time:</p>
+<ul>
+  <li><strong>Delete your account and all synced data</strong> — in the app, under Account &rarr; Delete account. See our <a href="account-deletion.html">account deletion page</a> for the full process and for how to request deletion without the app.</li>
+  <li><strong>Turn off analytics</strong> — Settings &rarr; Privacy.</li>
+  <li><strong>Remove ads</strong> — via the one-time ad-free purchase.</li>
+  <li><strong>Reset your advertising ID</strong> — in your Android settings.</li>
+</ul>
+<p>If you are in the UK or EEA you also have the right to access, correct, export, or restrict the processing of your personal data, and to object to it. To exercise any of these, email us at gregmish69@gmail.com. You may also complain to your local supervisory authority; in the UK that is the Information Commissioner's Office (ico.org.uk).</p>
+
+<h2>9. Children</h2>
+<p>FridgeChef is not directed at children under 13, and we do not knowingly collect their personal information. If you believe a child has provided us data, contact us and we will delete it.</p>
+
+<h2>10. Security</h2>
+<p>Account credentials are handled by Firebase Authentication and never stored by the app. Sensitive local preferences are held in encrypted device storage. Synced data is restricted by security rules so that only your signed-in account can read or write it. No system is perfectly secure, but we take reasonable measures to protect your information.</p>
+
+<h2>11. Changes</h2>
+<p>If we change this policy we will update the date at the top, and for significant changes we will notify you in the app.</p>
+
+<h2>12. Contact</h2>
+<p>Email: gregmish69@gmail.com<br>
+Data controller: [YOUR NAME OR TRADING NAME, AND POSTAL ADDRESS IF TRADING AS A BUSINESS]</p>
+
+<footer>
+FridgeChef: AI Recipe Planner &middot; Privacy Policy &middot; 16 September 2026
+</footer>
+
+</div>
+</body>
+</html>
