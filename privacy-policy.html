@@ -51,7 +51,7 @@
 
 <h3>What you put into the app</h3>
 <ul>
-  <li><strong>Kitchen content</strong> &mdash; ingredients you type or scan, saved recipes (with your notes, tags and ratings), pantry items and use-by dates, shopping list, meal plan, and the meals you log in the nutrition tracker. These are kept in encrypted storage on your phone.</li>
+  <li><strong>Kitchen content</strong> &mdash; ingredients you type or scan, saved recipes (with your notes, tags and ratings), pantry items and use-by dates, shopping list, meal plan, and the meals you log in the nutrition tracker. These are kept in the app's encrypted storage on your phone. A small list of what you changed, used only so sync can pass on deletions, is kept in ordinary app storage.</li>
   <li><strong>Preferences</strong> &mdash; your dietary choices, allergens, nutrition goals, kitchen equipment, region and units.</li>
   <li><strong>Your own recipe photos</strong> &mdash; stay on your phone. They are never uploaded, never synced to your account and not included in backups.</li>
   <li><strong>Account details (optional)</strong> &mdash; if you create an account or sign in with Google or Apple: your email address and display name. We never see your password.</li>
@@ -61,7 +61,7 @@
 <h3>What leaves your phone, and when</h3>
 <table>
   <tr><th>Feature</th><th>What is sent, and to whom</th></tr>
-  <tr><td>Fridge photo scan</td><td>The photo is sent over an encrypted connection to our recipe server, which passes it to Google's Gemini API to list the ingredients in it. It is used only to produce that list. We do not store it after the request, we do not link it to your account, and we do not use it to train any model. (You are asked to agree the first time.)</td></tr>
+  <tr><td>Fridge photo scan</td><td>The photo is sent over an encrypted connection to our recipe server, which passes it to Google's Gemini API to list the ingredients in it. It is used only to produce that list. We do not store it after the request, we do not link it to your account, and we do not use it to train any model. Google's own terms for the Gemini service apply to the processing. (You are asked to agree the first time.)</td></tr>
   <tr><td>AI recipes</td><td>Where your phone supports Android's on-device AI, your ingredients stay on the phone. Otherwise your ingredients, diet, allergens, equipment, region and units are sent to our server and on to Google Gemini to write the recipe. If neither works, the app writes a basic recipe on the phone with its own built-in engine.</td></tr>
   <tr><td>Chef chat</td><td>Your message, the recipe you are looking at, and your diet and allergens are processed on the phone where it supports on-device AI, and otherwise sent to our server and on to Google Gemini.</td></tr>
   <tr><td>Importing a recipe from a web page</td><td>The page address you give is fetched directly from your phone by the app. The website you ask for can see your internet address, as with any browser. Nothing is sent to us.</td></tr>
@@ -82,7 +82,7 @@
   <tr><th>Permission</th><th>Why</th></tr>
   <tr><td>Camera</td><td>To photograph your fridge for ingredient detection, scan barcodes, and take a photo for one of your recipes. Barcode scanning and recipe photos stay on your phone; the fridge photo is handled as described above.</td></tr>
   <tr><td>Microphone</td><td>Only for the optional voice features: dictating ingredients and saying "next" or "repeat" in cooking mode. The words are turned into text by your phone's speech recognition service (on Android this may be provided by Google). We do not receive or store the audio.</td></tr>
-  <tr><td>Notifications</td><td>For the use-by reminders you set. They are scheduled on your phone. The app asks again after your phone restarts, so that reminders are restored (this is why it asks to run at start-up).</td></tr>
+  <tr><td>Notifications</td><td>For the use-by reminders you set. They are scheduled on your phone. After your phone restarts, the app puts your reminders back (this is why it is allowed to run at start-up). The app asks your permission to show notifications when you set your first reminder or timer.</td></tr>
   <tr><td>Internet</td><td>For the features above.</td></tr>
 </table>
 <p>You can refuse or revoke any of these in your Android settings. The app works without them, with those features unavailable.</p>
@@ -144,7 +144,7 @@
 <p>The app is not directed at children under 13, and we do not knowingly collect their personal information. If you believe a child has provided us data, contact us and we will delete it.</p>
 
 <h2>9. Security</h2>
-<p>Account sign-in is handled by Firebase Authentication and your password is never stored by the app. Your kitchen content and preferences are held in encrypted storage on your device. Synced data is protected by security rules so that only your signed-in account can read or change it. No system is perfectly secure, but we take reasonable measures to protect your information.</p>
+<p>Account sign-in is handled by Firebase Authentication and your password is never stored by the app. Your kitchen content and preferences are held in the app's encrypted storage on your device (a small sync-change list is in ordinary app storage). Synced data is protected by security rules so that only your signed-in account can read or change it. No system is perfectly secure, but we take reasonable measures to protect your information.</p>
 
 <h2>10. Changes</h2>
 <p>If we change this policy we will update the date at the top, and for significant changes we will tell you in the app.</p>
